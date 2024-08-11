@@ -1,0 +1,1519 @@
+*
+{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.menu_section
+{
+    height: 15vh;
+    margin: 2pc 2pc;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_section .logo
+{
+    width: 20%;
+}
+.menu_section .logo img
+{
+    width: 100%;
+}
+.menu_section .menu
+{
+    display: flex;
+    gap: 2pc;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_section .menu li
+{
+    list-style: none;
+}
+.menu_section .menu li a
+{
+    font-size: 1.5pc;
+    text-decoration: none;
+}
+.menu_section .menu li a::after
+{
+    width: 0%;
+    height: 2px;
+    content: "";
+    margin: auto;
+    display: block;
+    transition: .3s ease-in-out;
+    background-color: rgb(26, 26, 23);
+}
+.menu_section .menu li a:hover::after
+{
+    width: 100%;
+}
+/* eding code menu style and logo */
+.header
+{
+    margin: 2pc 2pc 8pc;
+    display: flex;
+    gap: .5pc;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .box:first-child
+{
+    display: flex;
+    gap: 2pc;
+    flex-direction: column;
+    width: 50%;
+}
+.header .box h1
+{
+    font-size: 2pc;
+}
+.header .box h1 .nowrap
+{
+    white-space: nowrap;
+}
+.header .box p
+{
+    font-size: 1.3pc;
+}
+.header .search
+{
+    display: flex;
+    gap: 1pc;
+}
+.header .search input, button
+{
+    padding: .7pc;
+    outline: none;
+    font-size: 1.2pc;
+    border-radius: .3pc;
+}
+.header .search input
+{
+    width: 70%;
+    border: 2px solid #191919;
+}
+.header .search button
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(56, 56, 145);
+    border: 2px solid rgb(56, 56, 145);
+}
+.header .search button:hover, .header .search button:focus
+{
+    cursor: pointer;
+    background-color: #0000ff;
+    border: 2px solid #0000ff;
+}
+.header .box:last-child
+{
+    width: 50%;
+}
+.header .box img
+{
+    width: 100%;
+}
+/* ending code  */
+.main
+{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4pc 2pc;
+
+    background-image:  url('../images/background-content.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .box:first-child
+{
+    flex-basis: 100%;
+}
+.main .box:last-child
+{
+    flex-basis: 90%;
+    padding-top: 4pc;
+}
+.main .box h1
+{
+    font-size: 2pc;
+    line-height: 1;
+}
+.main .box p
+{
+    font-size: 1.3pc;
+    margin-block: .6pc .7pc;
+}
+.main .box a
+{
+    font-size: 1.1pc;
+    color: rgb(35, 199, 199);
+    text-decoration: none;
+    margin-block: .3pc 1.5pc;
+    display: block;
+}
+.main .box a:hover, .main .box a:focus
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(28, 206, 206);
+    text-shadow: 0px 3px 7px cyan;
+}
+.main .box img
+{
+    width: 100%;
+}
+/* ending  */
+.main .profile_container
+{
+    max-width: 70%;
+    padding: 1.5pc;
+    border-radius: 6px;
+    background-color: #1111;
+    transition: .4s ease-in-out;
+    box-shadow: 3px 4px 9px #191919;
+}
+.main .profile_container:hover,
+.main .profile_container:focus
+{
+    cursor: pointer;
+    border-radius: 9px;
+    box-shadow: 2px 3px 9px #191919;
+}
+.main .profile_container .qoute
+{
+    width: 10px;
+    height: auto;
+}
+.profile_text
+{
+    font-size: .9pc;
+    margin-block: .3pc 1.2pc;
+}
+.main .profile_container .profile
+{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    line-height: 1.2;
+    font-size: .7pc;
+}
+.main .profile_container .profile img
+{
+    max-width: 20%;
+    border-radius: 100px;
+}
+/* ending code */
+.footer
+{
+    background-color: rgb(20, 20, 104);
+    height: 100%;
+}
+.transparent_shade
+{
+    height: 25vh;
+    display: flex;
+    padding: 2pc 2pc;
+    align-items: center;
+    background-color: rgba(141, 188, 230, .4);
+}
+.transparent_shade h2
+{
+    font-size: 1.7pc;
+}
+.transparent_shade p
+{
+    font-size: 1pc;
+    margin-top: .5pc;
+}
+.transparent_shade .center
+{
+    display: flex;
+    gap: 1pc;
+    width: 100%;
+    justify-content: space-between;
+}
+.transparent_shade .center .box_text
+{
+    flex-basis: 50%;
+}
+/* ending  */
+.transparent_shade .center .input
+{
+    display: flex;
+    gap: .8pc;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+.center .input input, .input button
+{
+    padding: 1pc;
+    font-size: 1.1pc;
+    border-radius: 8px;
+}
+.center .input button
+{
+    width: 50%;
+    padding: .8pc;
+    border: none;
+    font-size: 1.2pc;
+    color: whitesmoke;
+    background-color: blue;
+}
+.center .input button:hover
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(39, 39, 175);
+}
+
+/* ending code */
+.footer_link
+{
+    padding: 0pc 2pc;
+}
+.footer_link .logo
+{
+    width: 200px;
+    margin-block: 2pc 1pc;
+}
+.footer_link .link
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_link .link .flex-link
+{
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+}
+.footer_link .link .flex-link a
+{
+    font-size: 1.2pc;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer_link .link .flex-link a:hover,
+.footer_link .link .flex-link a:focus
+{
+    text-decoration: underline;
+}
+.remixicon i
+{
+    padding: .4pc;
+    font-size: 1.5pc;
+    border-radius: 50%;
+    color: aliceblue;
+    margin-right: .4pc;
+    border: 2px solid wheat;
+}
+.remixicon i:hover,
+.remixicon i:hover  
+{
+    cursor: pointer;
+    color: rgb(111, 111, 247);
+    border: 2px solid aliceblue;
+}
+.myname
+{
+  color: white;
+  padding: 1pc;
+  text-align: center;
+}
+.myname a
+{
+    font-size: 1.3pc;
+  color: rgb(135, 135, 233);
+  text-decoration: none;
+}
+.myname a:hover
+{
+  color: rgb(196, 196, 214);
+  text-decoration: underline;
+}
+@media screen and (min-width: 889px) and (max-width: 1026px) {
+    body
+{
+    background-color: transparent;
+}
+
+.header
+{
+    margin: 1.5pc 1pc 7pc;
+    display: flex;
+    gap: .5pc;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .box:first-child
+{
+    display: flex;
+    gap: 2pc;
+    flex-direction: column;
+    width: 50%;
+}
+.header .box h1
+{
+    font-size: 2pc;
+}
+.header .box h1 .nowrap
+{
+    white-space: nowrap;
+}
+.header .box p
+{
+    font-size: 1pc;
+}
+.header .search
+{
+    display: flex;
+    gap: 1pc;
+}
+.header .search input, button
+{
+    padding: .6pc;
+    outline: none;
+    font-size: 1pc;
+    border-radius: .3pc;
+}
+.header .search input
+{
+    width: 65%;
+    border: 2px solid #191919;
+    border: 2px solid rgb(11,77,88);
+}
+.header .search button
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(56, 56, 145);
+    border: 2px solid rgb(56, 56, 145);
+}
+.header .search button:hover, .header .search button:focus
+{
+    cursor: pointer;
+    background-color: #0000ff;
+    border: 2px solid #0000ff;
+}
+/* ending code  */
+.main
+{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4pc 2pc;
+
+    background-image:  url('../images/background-content.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .box:first-child
+{
+    flex-basis: 100%;
+}
+.main .box:last-child
+{
+    flex-basis: 90%;
+}
+.main .box h1
+{
+    font-size: 2pc;
+    line-height: 1;
+}
+.main .box p
+{
+    font-size: 1pc;
+    margin-block: .6pc .7pc;
+}
+.main .box a
+{
+    font-size: 1pc;
+    color: rgb(35, 199, 199);
+    text-decoration: none;
+    margin-block: .3pc 1.5pc;
+    display: block;
+}
+.main .box a:hover, .main .box a:focus
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(28, 206, 206);
+    text-shadow: 0px 3px 7px cyan;
+}
+.main .box img
+{
+    width: 100%;
+}
+/* ending  */
+.main .profile_container
+{
+    max-width: 80%;
+    padding: 1.5pc;
+    border-radius: 6px;
+    background-color: #1111;
+    transition: .4s ease-in-out;
+    box-shadow: 3px 4px 9px #191919;
+}
+/* ending code */
+.transparent_shade
+{
+    height: auto;
+    display: flex;
+    padding: 2pc 2pc;
+    align-items: center;
+    background-color: rgba(141, 188, 230, .4);
+}
+.transparent_shade .center .box_text
+{
+    flex-basis: 50%;
+}
+/* ending  */
+.transparent_shade .center .input
+{
+    display: flex;
+    gap: .8pc;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+.center .input input, .input button
+{
+    padding: 1pc;
+    font-size: 1.1pc;
+    border-radius: 8px;
+}
+.center .input button
+{
+    width: 60%;
+    padding: .7pc;
+    border: none;
+    font-size: 1.2pc;
+    color: whitesmoke;
+    background-color: #0000ff;
+}
+.center .input button:hover
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(39, 39, 175);
+}
+
+/* ending code */
+.footer_link
+{
+    padding: 0pc 2pc;
+}
+.footer_link .logo
+{
+    width: 200px;
+    margin-block: 2pc 1pc;
+}
+.footer_link .link
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_link .link .flex-link
+{
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+}
+.footer_link .link .flex-link a
+{
+    font-size: 1.2pc;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer_link .link .flex-link a:hover,
+.footer_link .link .flex-link a:focus
+{
+    text-decoration: underline;
+}
+.remixicon i
+{
+    padding: .4pc;
+    font-size: 1.5pc;
+    border-radius: 50%;
+    color: aliceblue;
+    margin-right: .4pc;
+    border: 2px solid wheat;
+}
+.remixicon i:hover,
+.remixicon i:hover  
+{
+    cursor: pointer;
+    color: rgb(111, 111, 247);
+    border: 2px solid aliceblue;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 888px) {
+    body
+{
+    background-color: transparent;
+}
+
+.header
+{
+    display: flex;
+    gap: .5pc;
+    align-items: center;
+    margin: 1.5pc 1pc 7pc;
+    justify-content: space-between;
+}
+.header .box:first-child
+{
+    display: flex;
+    gap: 2pc;
+    flex-direction: column;
+    width: 50%;
+}
+.header .box h1
+{
+    font-size: 1.7pc;
+}
+.header .box h1 .nowrap
+{
+    white-space: wrap;
+}
+.header .box p
+{
+    font-size: 1pc;
+}
+.header .search
+{
+    display: flex;
+    gap: 1pc;
+}
+.header .search input, button
+{
+    padding: .6pc;
+    outline: none;
+    font-size: 1pc;
+    border-radius: .3pc;
+}
+.header .search input
+{
+    width: 65%;
+    border: 2px solid #191919;
+    border: 2px solid rgb(11,77,88);
+}
+.header .search button
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(56, 56, 145);
+    border: 2px solid rgb(56, 56, 145);
+}
+.header .search button:hover, .header .search button:focus
+{
+    cursor: pointer;
+    background-color: #0000ff;
+    border: 2px solid #0000ff;
+}
+/* ending code  */
+.main
+{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4pc 2pc;
+
+    background-image:  url('../images/background-content.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .box:first-child
+{
+    flex-basis: 100%;
+}
+.main .box:last-child
+{
+    flex-basis: 90%;
+}
+.main .box h1
+{
+    font-size: 1.8pc;
+    line-height: 1;
+}
+.main .box p
+{
+    font-size: 1pc;
+    margin-block: .6pc .7pc;
+}
+.main .box a
+{
+    font-size: 1pc;
+    color: rgb(35, 199, 199);
+    text-decoration: none;
+    margin-block: .3pc 1.5pc;
+    display: block;
+}
+.main .box a:hover, .main .box a:focus
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(28, 206, 206);
+    text-shadow: 0px 3px 7px cyan;
+}
+.main .box img
+{
+    width: 100%;
+}
+/* ending  */
+.main .profile_container
+{
+    max-width: 90%;
+    padding: 1.5pc;
+    border-radius: 6px;
+    background-color: #1111;
+    transition: .4s ease-in-out;
+    box-shadow: 3px 4px 9px #191919;
+}
+.main .profile_container:hover,
+.main .profile_container:focus
+{
+    cursor: pointer;
+    border-radius: 9px;
+    box-shadow: 2px 3px 9px #191919;
+}
+.main .profile_container .qoute
+{
+    width: 10px;
+    height: auto;
+}
+.profile_text
+{
+    font-size: .9pc;
+    margin-block: .3pc 1.2pc;
+}
+.main .profile_container .profile
+{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    line-height: 1.2;
+    font-size: .7pc;
+}
+.main .profile_container .profile img
+{
+    max-width: 20%;
+    border-radius: 100px;
+}
+/* ending code */
+
+.transparent_shade .center .box_text
+{
+    flex-basis: 50%;
+}
+/* ending  */
+.transparent_shade .center .input
+{
+    display: flex;
+    gap: .8pc;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+.center .input input, .input button
+{
+    padding: 1pc;
+    font-size: 1.1pc;
+    border-radius: 8px;
+}
+.center .input button
+{
+    width: 60%;
+    padding: .7pc;
+    border: none;
+    font-size: 1.2pc;
+    color: whitesmoke;
+    background-color: #0000ff;
+}
+.center .input button:hover
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(39, 39, 175);
+}
+
+/* ending code */
+.footer_link
+{
+    padding: 0pc 2pc;
+}
+.footer_link .logo
+{
+    width: 200px;
+    margin-block: 2pc 1pc;
+}
+.footer_link .link
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_link .link .flex-link
+{
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+}
+.footer_link .link .flex-link a
+{
+    font-size: 1.2pc;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer_link .link .flex-link a:hover,
+.footer_link .link .flex-link a:focus
+{
+    text-decoration: underline;
+}
+.remixicon i
+{
+    padding: .4pc;
+    font-size: 1.5pc;
+    border-radius: 50%;
+    color: aliceblue;
+    margin-right: .4pc;
+    border: 2px solid wheat;
+}
+.remixicon i:hover,
+.remixicon i:hover  
+{
+    cursor: pointer;
+    color: rgb(111, 111, 247);
+    border: 2px solid aliceblue;
+}
+}
+/* android screen */
+@media screen and (min-width: 360px) and (max-width: 499.99px) {
+    /* body{ background-color: purple;} */
+    .menu_section
+{
+    height: 10vh;
+    margin: 6pc 1pc 1pc;
+    border: 3px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_section .menu
+{
+    display: flex;
+    gap: 2pc;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_section .menu li
+{
+    list-style: none;
+}
+.menu_section .menu li a
+{
+    font-size: 1pc;
+    text-decoration: none;
+}
+.menu_section .menu li a::after
+{
+    width: 0%;
+    height: 2px;
+    content: "";
+    margin: auto;
+    display: block;
+    transition: .3s ease-in-out;
+    background-color: rgb(26, 26, 23);
+}
+.menu_section .menu li a:hover::after
+{
+    width: 100%;
+}
+/* eding code menu style and logo */
+.header
+{
+    margin: 0;
+    padding: 1pc;
+    display: flex;
+    gap: 0; 
+    flex-direction: column;
+}
+.header .box:first-child
+{
+    display: flex;
+    gap: 1.5pc;
+    flex-direction: column;
+    width: 100%;
+}
+.header .box h1
+{
+    font-size: 1.8pc;
+    text-align: center;
+}
+.header .box h1 .nowrap
+{
+    white-space: nowrap;
+}
+.header .box p
+{
+    font-size: 1.3pc;
+    text-align: center;
+}
+.header .search
+{
+    display: flex;
+    gap: .7pc;
+    flex-direction: column;
+}
+.header .search input, button
+{
+    outline: none;
+    font-size: 1.2pc;
+    border-radius: .3pc;
+}
+.header .search input
+{
+    width: 100%;
+    padding: .9pc;
+    border: 2px solid #191919;
+}
+.header .search button
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(56, 56, 145);
+    border: 2px solid rgb(56, 56, 145);
+}
+.header .search button:hover, .header .search button:focus
+{
+    cursor: pointer;
+    background-color: #0000ff;
+    border: 2px solid #0000ff;
+}
+.header .box:last-child
+{
+    width: 100%;
+    margin-top: 3pc;
+}
+.header .box img
+{
+    width: 100%;
+}
+/* ending code  */
+.main
+{
+    display: flex;
+    gap: 1pc;
+    margin: 0;
+    padding: 4pc 1pc;
+    flex-direction: column;
+
+    background-image:  url('../images/background-content.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .box:first-child
+{
+    flex-basis: 100%;
+    padding-top: 2pc;
+    text-align: center;
+}
+.main .box:last-child
+{
+    flex-basis: 100%;
+    padding-top: 4pc;
+}
+.main .box h1
+{
+    font-size: 1.5pc;
+    line-height: .7;
+}
+.main .box p
+{
+    font-size: 1pc;
+    margin-block: 1.5pc .7pc;
+}
+.main .box a
+{
+    font-size: 1.1pc;
+    color: rgb(35, 199, 199);
+    text-decoration: none;
+    margin-block: .3pc 1.5pc;
+    display: block;
+}
+.main .box a:hover, .main .box a:focus
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(28, 206, 206);
+    text-shadow: 0px 3px 7px cyan;
+}
+.main .box img
+{
+    width: 100%;
+}
+/* ending  */
+.main .profile_container
+{
+    text-align: left;
+    max-width: 100%;
+    padding: 1.5pc;
+    border-radius: 6px;
+    background-color: #1111;
+    transition: .4s ease-in-out;
+    box-shadow: 3px 4px 9px #191919;
+}
+.main .profile_container:hover,
+.main .profile_container:focus
+{
+    cursor: pointer;
+    border-radius: 9px;
+    box-shadow: 2px 3px 9px #191919;
+}
+.main .profile_container .qoute
+{
+    width: 10px;
+    height: auto;
+}
+.profile_text
+{
+    font-size: .9pc;
+    margin-block: .3pc 1.2pc;
+}
+.main .profile_container .profile
+{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    line-height: 1.2;
+    font-size: .7pc;
+}
+.main .profile_container .profile h3
+{
+    text-align: left;
+    font-weight: 400;
+}
+.main .profile_container .profile h3::first-line
+{
+    text-align: left;
+    font-weight: 700;
+}
+.main .profile_container .profile img
+{
+    max-width: 20%;
+    border-radius: 100px;
+}
+/* ending code */
+.footer
+{
+    background-color: rgb(20, 20, 104);
+    height: 100%;
+}
+.myname
+{
+  color: white;
+  padding: 1pc;
+  text-align: center;
+}
+.myname a
+{
+    font-size: 1pc;
+  color: rgb(135, 135, 233);
+  text-decoration: none;
+}
+.myname a:hover
+{
+  color: rgb(196, 196, 214);
+  text-decoration: underline;
+}
+.transparent_shade
+{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2pc 2pc;
+    align-items: center;
+    background-color: rgba(141, 188, 230, .4);
+}
+.transparent_shade h2
+{
+    font-size: 1.7pc;
+    text-align: center;
+}
+.transparent_shade p
+{
+    font-size: 1pc;
+    margin-top: .7pc;
+    text-align: center;
+}
+.transparent_shade .center
+{
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+.transparent_shade .center .box_text
+{
+    flex-basis: 100%;
+}
+/* ending
+  */
+.transparent_shade .center .input
+{
+    display: flex;
+    gap: .8pc;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+.center .input input, .input button
+{
+    padding: 1pc;
+    font-size: 1.1pc;
+    border-radius: 8px;
+}
+.center .input button
+{
+    width: 100%;
+    padding: .8pc;
+    border: none;
+    font-size: 1.2pc;
+    color: whitesmoke;
+    background-color: blue;
+}
+.center .input button:hover
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(39, 39, 175);
+}
+
+/* ending code */
+.footer_link
+{
+    padding: 0pc 2pc;
+}
+.footer_link .logo
+{
+    width: 200px;
+    margin-block: 3pc 1pc;
+
+}
+.footer_link .link
+{
+    display: flex;
+    line-height: 2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_link .link .flex-link
+{
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+}
+.footer_link .link .flex-link a
+{
+    font-size: 1.2pc;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer_link .link .flex-link a:hover,
+.footer_link .link .flex-link a:focus
+{
+    text-decoration: underline;
+}
+.remixicon
+{
+    margin: auto;
+    padding: 1pc;
+}
+.remixicon i
+{
+    padding: .4pc;
+    font-size: 1.5pc;
+    border-radius: 50%;
+    color: aliceblue;
+    border: 2px solid wheat;
+}
+.remixicon i:hover,
+.remixicon i:hover  
+{
+    cursor: pointer;
+    color: rgb(111, 111, 247);
+    border: 2px solid aliceblue;
+}
+
+}
+
+/* iphone small screen */
+@media screen and (min-width: 60px) and (max-width: 359.99px) {
+    /* body{ background-color: purple;} */
+    .menu_section
+{
+    height: 10vh;
+    margin: 6pc 1pc 1pc;
+    border: 3px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_section .menu
+{
+    display: flex;
+    gap: 2pc;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_section .menu li
+{
+    list-style: none;
+}
+.menu_section .menu li a
+{
+    font-size: 1pc;
+    text-decoration: none;
+}
+.menu_section .menu li a::after
+{
+    width: 0%;
+    height: 2px;
+    content: "";
+    margin: auto;
+    display: block;
+    transition: .3s ease-in-out;
+    background-color: rgb(26, 26, 23);
+}
+.menu_section .menu li a:hover::after
+{
+    width: 100%;
+}
+/* eding code menu style and logo */
+.header
+{
+    margin: 0;
+    padding: 1pc;
+    display: flex;
+    gap: 3pc; 
+    flex-direction: column;
+}
+.header .box:first-child
+{
+    display: flex;
+    gap: 1.9pc;
+    flex-direction: column;
+    width: 100%;
+}
+.header .box h1
+{
+    font-size: 1.6pc;
+    text-align: center;
+}
+.header .box h1 .nowrap
+{
+    white-space: nowrap;
+}
+.header .box p
+{
+    font-size: 1pc;
+    text-align: center;
+}
+.header .search
+{
+    display: flex;
+    gap: .7pc;
+    flex-direction: column;
+}
+.header .search input, button
+{
+    outline: none;
+    font-size: 1.2pc;
+    border-radius: .3pc;
+}
+.header .search input
+{
+    width: 100%;
+    padding: .6pc;
+    border: 2px solid #191919;
+}
+.header .search button
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(56, 56, 145);
+    border: 2px solid rgb(56, 56, 145);
+}
+.header .search button:hover, .header .search button:focus
+{
+    cursor: pointer;
+    background-color: #0000ff;
+    border: 2px solid #0000ff;
+}
+.header .box:last-child
+{
+    width: 100%;
+    margin-top: 2.5pc;
+}
+.header .box img
+{
+    width: 100%;
+}
+/* ending code  */
+.main
+{
+    display: flex;
+    gap: 1pc;
+    margin: 0;
+    padding: 4pc 1pc;
+    flex-direction: column;
+
+    background-image:  url('../images/background-content.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .box:first-child
+{
+    flex-basis: 100%;
+    padding-top: 2pc;
+    text-align: center;
+}
+.main .box:last-child
+{
+    flex-basis: 100%;
+    padding-top: 4pc;
+}
+.main .box h1
+{
+    font-size: 1.5pc;
+    line-height: .7;
+}
+.main .box p
+{
+    font-size: 1pc;
+    margin-block: 1.5pc .7pc;
+}
+.main .box a
+{
+    font-size: 1.1pc;
+    color: rgb(35, 199, 199);
+    text-decoration: none;
+    margin-block: .3pc 1.5pc;
+    display: block;
+}
+.main .box a:hover, .main .box a:focus
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(28, 206, 206);
+    text-shadow: 0px 3px 7px cyan;
+}
+.main .box img
+{
+    width: 100%;
+}
+/* ending  */
+.main .profile_container
+{
+    max-width: 100%;
+    padding: 1.5pc;
+    border-radius: 6px;
+    background-color: #1111;
+    transition: .4s ease-in-out;
+    box-shadow: 3px 4px 9px #191919;
+}
+.main .profile_container:hover,
+.main .profile_container:focus
+{
+    cursor: pointer;
+    border-radius: 9px;
+    box-shadow: 2px 3px 9px #191919;
+}
+.main .profile_container .qoute
+{
+    width: 10px;
+    height: auto;
+}
+.profile_text
+{
+    font-size: .9pc;
+    margin-block: .3pc 1.2pc;
+}
+.main .profile_container .profile
+{
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    line-height: 1.2;
+    font-size: .7pc;
+}
+.main .profile_container .profile h3
+{
+    text-align: left;
+    font-weight: 400;
+}
+.main .profile_container .profile h3::first-line
+{
+    text-align: left;
+    font-weight: 700;
+}
+.main .profile_container .profile img
+{
+    max-width: 20%;
+    border-radius: 100px;
+}
+/* ending code */
+.footer
+{
+    background-color: rgb(20, 20, 104);
+    height: 100%;
+}
+.myname
+{
+  color: white;
+  padding: 1pc;
+  text-align: center;
+}
+.myname a
+{
+    font-size: .8pc;
+  color: rgb(135, 135, 233);
+  text-decoration: none;
+}
+.myname a:hover
+{
+  color: rgb(196, 196, 214);
+  text-decoration: underline;
+}
+.transparent_shade
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2pc 2pc;
+    align-items: center;
+    background-color: rgba(141, 188, 230, .4);
+}
+.transparent_shade h2
+{
+    font-size: 1.7pc;
+    text-align: center;
+}
+.transparent_shade p
+{
+    font-size: 1pc;
+    margin-top: .7pc;
+    text-align: center;
+}
+.transparent_shade .center
+{
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+.transparent_shade .center .box_text
+{
+    flex-basis: 100%;
+}
+/* ending
+  */
+.transparent_shade .center .input
+{
+    display: flex;
+    gap: .8pc;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+.center .input input, .input button
+{
+    padding: 1pc;
+    font-size: 1.1pc;
+    border-radius: 8px;
+}
+.center .input button
+{
+    width: 100%;
+    padding: .8pc;
+    border: none;
+    font-size: 1.2pc;
+    color: whitesmoke;
+    background-color: blue;
+}
+.center .input button:hover
+{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(39, 39, 175);
+}
+
+/* ending code */
+.footer_link
+{
+    padding: 0pc 2pc;
+}
+.footer_link .logo
+{
+    width: 200px;
+    margin-block: 3pc 1pc;
+
+}
+.footer_link .link
+{
+    display: flex;
+    line-height: 2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_link .link .flex-link
+{
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+}
+.footer_link .link .flex-link a
+{
+    font-size: 1.2pc;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer_link .link .flex-link a:hover,
+.footer_link .link .flex-link a:focus
+{
+    text-decoration: underline;
+}
+.remixicon
+{
+    margin: auto;
+    padding: 1pc;
+}
+.remixicon i
+{
+    padding: .4pc;
+    font-size: 1.5pc;
+    border-radius: 50%;
+    color: aliceblue;
+    border: 2px solid wheat;
+}
+.remixicon i:hover,
+.remixicon i:hover  
+{
+    cursor: pointer;
+    color: rgb(111, 111, 247);
+    border: 2px solid aliceblue;
+}
+
+}
